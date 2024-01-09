@@ -1,0 +1,11 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /cookie                   --> Hello/src/router.OtherRouter.func1 (5 handlers)
+[GIN-debug] GET    /redirect                 --> Hello/src/router.OtherRouter.func2 (5 handlers)
+[GIN-debug] GET    /redirectfrom             --> Hello/src/router.OtherRouter.func3 (5 handlers)
+::1 - [Tue, 09 Jan 2024 23:12:33 CST] "GET /redirect HTTP/1.1 301 509µs "PostmanRuntime/7.36.0" "
+[GIN] 2024/01/09 - 23:12:33 | 301 |     18.0574ms |             ::1 | GET      "/redirect"
+::1 - [Tue, 09 Jan 2024 23:12:37 CST] "GET /returnJSON HTTP/1.1 404 615.6µs "PostmanRuntime/7.36.0" "
+[GIN] 2024/01/09 - 23:12:37 | 404 |       615.6µs |             ::1 | GET      "/returnJSON"
