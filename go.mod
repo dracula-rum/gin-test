@@ -1,4 +1,4 @@
-module Hello
+module gin-test
 
 go 1.21
 
